@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    position: absolute;
+    display: inline-flex;
+}
+h2{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+}
+.main-content{
+    display: flex;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #003478, rgba(31, 34, 85, 0.67), rgb(17, 31, 48));
+}
+.ford-logo{
+    margin-left: 15px;
+    height: 80px;
+    width: 80px;
+}
+.user-information{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-items: center;
+}
+.user-logo{
+    width: 35px;
+    height: 35px;
+}
+.user-info{
+    list-style: none;
+    margin-right: 25px;
+    font-family: "Arial Rounded MT", serif;
+    font-size: medium;
+    font-weight: lighter;
+    padding-left: 15px;
+}

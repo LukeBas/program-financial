@@ -1,0 +1,50 @@
+.filter-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #2062a4;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filter-modal h2{
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.close-modal{
+    margin: 30px auto auto;
+    display: flex;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #2062a4;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 17px;
+}
+
+.filter-list{
+    list-style: none;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.filter-list li{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    break-inside: avoid;
+}
+
+.select-all{
+    background-color: white;
+    color: #2062a4;
+    border-radius: 10px;
+    padding-left: 10px;
+}

@@ -1,0 +1,126 @@
+.main-body{
+  background: transparent;
+  background-size: cover;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/*
+.main-body h2{
+  font-family: "Arial Rounded MT", serif;
+  justify-content: center;
+  text-align: center;
+}
+*/
+.loading-conteiner-father{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #164b86;
+}
+
+.loading-conteiner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  animation: loading-rotate 2s linear infinite;
+  overflow: hidden;
+}
+
+.loading-conteiner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  background: #164b86;
+}
+
+@keyframes loading-rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+@keyframes loading-rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.loading-error{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ab2c2c;
+}
+
+.loading-error h1:not(.sad-face){
+  position: fixed;
+  font-size: 52px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  width: max-content;
+  overflow: hidden;
+  font-family: "Arial Rounded MT", serif;
+}
+
+.loading-error h2{
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  width: max-content;
+  overflow: hidden;
+  text-align: center;
+}
+
+.loading-error button{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: max-content;
+  overflow: hidden;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #2d2f30;
+  border-style: none;
+  font-family: "Arial Rounded MT", serif;
+  cursor: pointer;
+}
+
+#warning-img{
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 280px;
+  height: 280px;
+}

@@ -1,0 +1,15 @@
+body{
+    background-color: #1f2021;
+    background-image: none;
+}
+.error-body{
+    background-color: #1f2021;
+    align-items: center;
+}
+
+.error-body h3{
+    color: white;
+    text-align: center;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+}

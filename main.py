@@ -1,25 +1,13 @@
-from PyQt5.QtWidgets import *
-from PyQt5 import uic
-import os
-from fedebom import findFedebom
+from flask import Flask
+from flask_cors import CORS
 from azure import authentication
+from controllers.mainController import mainBlueprint
+#Código principal
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+app.register_blueprint(mainBlueprint)
 
-class MyGUI(QMainWindow):
-    def __init__(self):
-        super(MyGUI, self).__init__()
-        ui_path = os.path.join(os.path.dirname(__file__), 'ui', 'testUi.ui')
-        uic.loadUi(ui_path, self)
-        self.showMaximized()
-        self.activateWindow()
-        self.raise_()
-
-def main():
-    app = QApplication([])
-    app.setStyle('Fusion')
-    window = MyGUI()
-    app.exec_()
-
+#Valida a autenticação e inicia o servidor
 if __name__ == '__main__':
-    authentication.start()
-    main()
-
+    #authValidation = authentication.start()
+    app.run(debug=True, port=8000)

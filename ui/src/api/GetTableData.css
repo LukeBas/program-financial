@@ -1,0 +1,83 @@
+.table-body{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    margin-left: 5px;
+    justify-items: center;
+    text-align: center;
+    overflow: auto;
+    height: 400px;
+    max-width: 100%;
+    white-space: nowrap;
+    }
+.table-body::-webkit-scrollbar{
+    height: 8px;
+    /*background-color: rgba(26, 70, 108, 0.24);*/
+}
+.table-body::-webkit-scrollbar-thumb{
+    cursor: pointer;
+    background-color: #175590;
+    border-radius: 50px;
+}
+.table-body::-webkit-scrollbar-thumb:vertical{
+    cursor: pointer;
+    background-color: #175590;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: white;
+}
+.table-body table{
+    margin-top: 1%;
+    float: left;
+    border-collapse: separate;
+    border-spacing: 15px 10px;
+}
+.table-body th{
+    color: white;
+    background-color: #1f4f8c;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 80px;
+    font-weight: bold;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color-scheme: light dark;
+}
+.table-body td{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: black;
+    height: 100px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+.slide-in {
+    animation: slide-in 0.5s ease-out forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s ease-out forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(150%);
+        /*opacity: 0;*/
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(150%);
+        /*opacity: 0;*/
+    }
+}

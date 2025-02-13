@@ -1,0 +1,40 @@
+.information-container h2{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 80px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: fit-content;
+    justify-self: center;
+    background-color: #2d2f30;
+}
+
+.modules-container{
+    text-align: center;
+}
+
+.modules-container a{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    margin-top: 60px;
+    position: relative;
+    font-size: 72px;
+    color: #164b86;
+    background: linear-gradient(to right, rgba(238, 239, 241, 0.83), rgba(240, 240, 244, 0.55), rgba(255, 255, 255, 0.36));
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 30px;
+    transition: .7s;
+}
+
+.modules-container a:hover{
+    color: white;
+    background: #164b86;
+}
+
+.crf-link{
+    right: 2%;
+}
+
+.fedebom-link{
+    left: 2%;
+}
